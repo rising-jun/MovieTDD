@@ -1,0 +1,58 @@
+{
+    "lastBuildDate":"Sat, 28 May 2022 17:33:53 +0900",
+    "total":5,
+    "start":1,
+    "display":5,
+    "items":[
+    {
+        "title":"아이언맨",
+        "link":"https:\/\/movie.naver.com\/movie\/bi\/mi\/basic.nhn?code=44885",
+        "image":"https:\/\/ssl.pstatic.net\/imgmovie\/mdi\/mit110\/0448\/D4885-01.jpg",
+        "subtitle":"Iron Man",
+        "pubDate":"2008",
+        "director":"존 파브로|",
+        "actor":"로버트 다우니 주니어|테렌스 하워드|제프 브리지스|기네스 팰트로|",
+        "userRating":"8.93"
+    },
+    {
+        "title":"철남",
+        "link":"https:\/\/movie.naver.com\/movie\/bi\/mi\/basic.nhn?code=26530",
+        "image":"https:\/\/ssl.pstatic.net\/imgmovie\/mdi\/mit110\/0265\/26530_P01_154850.jpg",
+        "subtitle":"The <b>Ironman<\/b>",
+        "pubDate":"1989",
+        "director":"츠카모토 신야|",
+        "actor":"타구치 토모로오|후지와라 케이|카나오카 노부|",
+        "userRating":"6.84"
+    },
+    {
+        "title":"구련환",
+        "link":"https:\/\/movie.naver.com\/movie\/bi\/mi\/basic.nhn?code=42405",
+        "image":"https:\/\/ssl.pstatic.net\/imgmovie\/mdi\/mit110\/0424\/42405_P01_091902.jpg",
+        "subtitle":"Man Of Iron",
+        "pubDate":"1972",
+        "director":"장철|포학례|",
+        "actor":"진관태|정리|",
+        "userRating":"9.00"
+    },
+    {
+        "title":"아이언 맨",
+        "link":"https:\/\/movie.naver.com\/movie\/bi\/mi\/basic.nhn?code=77056",
+        "image":"https:\/\/ssl.pstatic.net\/imgmovie\/mdi\/mit110\/0770\/77056_P01_055722.jpg",
+        "subtitle":"Iron Man",
+        "pubDate":"1951",
+        "director":"조셉 페브니|",
+        "actor":"제프 캔들러|에블린 키예스|",
+        "userRating":"5.37"
+    },
+    {
+        "title":"아이언 맨",
+        "link":"https:\/\/movie.naver.com\/movie\/bi\/mi\/basic.nhn?code=77057",
+        "image":"https:\/\/ssl.pstatic.net\/imgmovie\/mdi\/mit110\/0770\/77057_P01_092258.jpg",
+        "subtitle":"Iron Man",
+        "pubDate":"1931",
+        "director":"토드 브라우닝|",
+        "actor":"루 에어스|로버트 암스트롱|",
+        "userRating":"7.54"
+    }
+    ]
+}
