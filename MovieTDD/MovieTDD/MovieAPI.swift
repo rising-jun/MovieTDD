@@ -43,8 +43,8 @@ enum MovieAPI: API {
         switch self {
         case .searchMovies(_):
             return [["application/json; charset=utf-8", "Coontent-Type"],
-                    ["hVcI6jc4IdxV2n4KQXnF", "X-Naver-Cliend-Id"],
-                    ["nBkPO4GU8Q", "X-Naver-Cliend-Secret"]]
+                    ["hVcI6jc4IdxV2n4KQXnF", "X-Naver-Client-Id"],
+                    ["nBkPO4GU8Q", "X-Naver-Client-Secret"]]
         }
     }
 

@@ -14,8 +14,8 @@ final class MovieService {
         return configuration
     }()
     
-    private lazy var session = URLSession(configuration: configuration)
-    
+    //private lazy var session = URLSession(configuration: configuration)
+    private lazy var session = URLSession.shared
     func requestMovieInfo<T: Decodable>(api: API, completionHandler: @escaping((Result<T, NetworkError>) -> Void)) {
         guard let url = URL(string: api.baseURL + api.path) else {
             return completionHandler(.failure(.invaildURL))
@@ -35,18 +35,19 @@ final class MovieService {
     }
     
     private func dataTask<T:Decodable>(urlRequest: URLRequest, completionHandler: @escaping((Result<T,NetworkError>) -> Void)) {
-        let dataTask = session.dataTask(with: urlRequest) { [weak self] data, response, error in
-            guard let self = self else { return }
+        let dataTask = session.dataTask(with: urlRequest) { data, response, error in
             //handling transportError
             if let _ = error  {
                 completionHandler(.failure(.transport))
                 return
             }
+            
             //handling NoDataError
             guard let data = data else {
                 completionHandler(.failure(.nilData))
                 return
             }
+            
             //handling ServerError
             guard let statusCode = self.getStatusCode(response: response) else { return }
             guard 200..<300 ~= statusCode else {
@@ -70,10 +71,10 @@ final class MovieService {
 }
 
 struct NoDecode {
-    let noDecode:String = "noDecode"
+    let noDecode: String = "noDecode"
 }
 
-enum NetworkError: Error {
+enum NetworkError: Error, Equatable {
     case invaildURL
     case transport
     case nilData
@@ -81,11 +82,7 @@ enum NetworkError: Error {
     case decoding
 }
 
-struct MovieItems: Codable, Equatable {
-    static func == (lhs: MovieItems, rhs: MovieItems) -> Bool {
-        return lhs.items.count == rhs.items.count
-    }
-    
+struct MovieItems: Codable {
     let items: [MovieInfo]
 }
 
